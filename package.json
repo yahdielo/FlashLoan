@@ -1,11 +1,31 @@
 {
+  "name": "flasloan",
+  "version": "1.0.0",
+  "description": "We will be using npm and hardhat so make sure you have those installed, if not you can find plenty of information on how to get up to speed",
+  "main": "hardhat.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yahdielo/FlasLoan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yahdielo/FlasLoan/issues"
+  },
+  "homepage": "https://github.com/yahdielo/FlasLoan#readme",
   "devDependencies": {
-    "@nomicfoundation/hardhat-ethers": "^3.0.4",
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
-    "ethers": "^6.7.0",
     "hardhat": "^2.17.1"
   },
   "dependencies": {
-    "@aave/core-v3": "^1.18.0"
+    "@aave/core-v3": "^1.18.0",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.7.0"
   }
 }

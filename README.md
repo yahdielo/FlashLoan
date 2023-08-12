@@ -10,6 +10,10 @@ We will be using npm and hardhat so make sure you have those installed, if not y
 
     npm install --save-dev hardhat
 
+    npm install --save-dev @nomicfoundation/hardhat-toolbox
+
+    npm install dotenv --save
+
 to start the hardhat ptoject
 
     npx hardhat
