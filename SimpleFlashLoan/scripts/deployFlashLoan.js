@@ -4,7 +4,7 @@ async function main() {
   console.log("deploying...");
   const FlashLoan = await hre.ethers.getContractFactory("SimpleFlashLoan");
   const flashLoan = await FlashLoan.deploy(
-    "0xeb7A892BB04A8f836bDEeBbf60897A7Af1Bf5d7F"
+    "0xC911B590248d127aD18546B186cC6B324e99F02c"
   );
 
   await flashLoan.waitForDeployment()
