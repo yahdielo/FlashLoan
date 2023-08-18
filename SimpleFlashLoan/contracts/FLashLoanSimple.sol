@@ -54,7 +54,18 @@ contract SimpleFlashLoan is FlashLoanSimpleReceiverBase {
         IERC20 token = IERC20(_tokenAddress);
         token.transfer(msg.sender, token.balanceOf(address(this)));
     }
-      modifier onlyOwner() {
+
+    function transferTokens(address to, uint256 amount, address _tokenAddress) external  onlyOwner {
+        IERC20 token = IERC20( _tokenAddress);
+    
+        uint256 contractBalance = token.balanceOf(address(this));
+        require(contractBalance >= amount, "Insufficient balance in the contract");
+
+        bool success = token.transfer(to, amount);
+        require(success, "Token transfer failed");
+    }
+
+    modifier onlyOwner() {
         require(
             msg.sender == owner,
             "Only the contract owner can call this function"

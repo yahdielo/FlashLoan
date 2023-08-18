@@ -6,12 +6,12 @@ require('dotenv').config()
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: "0.8.10",
-  defaultNetwork: "polygon_mumbai",
+  //defaultNetwork: "polygon_mumbai",
   networks: {
     hardhat: {
     },
-    polygon_mumbai: {
-      url: "https://polygon-mumbai.g.alchemy.com/v2/_pXKkAyrl5H0_vJyCQqvpD_807nh46Ba",
+    goerli: {
+      url: `https://eth-goerli.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`,
       accounts: [process.env.PRIVATE_KEY]
     }
   }
