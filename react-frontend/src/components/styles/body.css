@@ -1,0 +1,49 @@
+
+
+.body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.column2-3 {
+    grid-column: 2 / span 2; /* Span from column 2 to 3 */
+    text-align: center; /* Center the text */
+    margin: 5px;
+    height: 50px;
+}
+
+
+.row1-col2-to-col3 {
+    grid-column: 2 / span 2; /* Span from column 2 to 3 */
+    text-align: center; /* Center the text */
+}
+
+.row2-col2-col3 {
+    grid-column: 2 / span 2; /* Span from column 2 to 3 */
+    text-align: center; /* Center the text */
+    border-top: solid black;
+    border-left: solid black;
+    border-right: solid black;
+}
+
+.row2-col2-col3 token-buttons {
+    padding: 3px;
+}
+
+.row3-col2-col3 {
+    grid-column: 2 / span 2; /* Span from column 2 to 3 */
+    text-align: center; /* Center the text */
+    border-left: solid black;
+    border-right: solid black;
+}
+
+.row4-col2-col3 {
+    grid-column: 2 / span 2; /* Span from column 2 to 3 */
+    text-align: center; /* Center the text */
+    border-bottom: solid black;
+    border-left: solid black;
+    border-right: solid black;
+}

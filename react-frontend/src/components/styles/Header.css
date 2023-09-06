@@ -1,0 +1,26 @@
+/* Header container styles */
+.Header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+  }
+
+  /* Navigation button styles */
+  .nav-button{
+    margin-left: auto; /* Move the button to the right */
+  }
+  
+  .nav-button button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+      
+  }
+  .Connect-wallet {
+    background-color: blue; /* Set blue background */
+    color: white; /* Set text color to white */
+    cursor: pointer;
+    }
